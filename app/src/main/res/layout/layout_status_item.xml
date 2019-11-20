@@ -1,0 +1,51 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#F3F3F3">
+     <FrameLayout
+             android:background="#FFFFFF"
+             android:id="@+id/framelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+            android:id="@+id/framelayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/thumbnailIv"/>
+
+    </LinearLayout>
+
+
+    <ImageView
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:id="@+id/playIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/black"
+            android:background="@drawable/color_gray_trans_circle"
+            android:layout_gravity="top|right"
+            />
+
+
+    <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/videoplay"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:tint="@color/white"
+            android:background="@drawable/color_gray_trans_circle"
+            android:layout_gravity="center|center_horizontal"
+
+            />
+
+</FrameLayout>
+

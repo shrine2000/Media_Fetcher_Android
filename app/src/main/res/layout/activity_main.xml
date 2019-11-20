@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/receive_tv"
+        android:text="Recevied"
+        android:textSize="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_marginBottom="71dp"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="1dp" />
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="#CFDEFF"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/sent"
+            android:text="Sent"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/media"
+            android:text="Media"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/receive"
+            android:text="Received"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
